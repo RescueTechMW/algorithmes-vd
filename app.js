@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 20-08-2026 08h40");
+console.log("APP VERSION 20-08-2026 08h50");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -2090,10 +2090,10 @@ window.calculConvulsionsAdulte = function () {
 
   resultats.innerHTML = `
     <div class="med-box midazolam">
-      <strong>Midazolam IM / IN</strong><br>
+      <strong>Midazolam IM / IN ( 15mg/3ml )</strong><br>
       Dose : ${doseMg.toFixed(1)} mg<br>
       Volume : ${volumeMl.toFixed(2)} ml<br>
-      Concentration : 5 mg/ml
+      Concentration : 15 mg/3 ml = 5 mg/ml
     </div>
 
     <div class="med-box rivotril">
@@ -2122,11 +2122,12 @@ window.calculConvulsionsPedia = function () {
 
   resultats.innerHTML = `
     <div class="med-box midazolam">
-      <strong>Midazolam IM / IN</strong><br>
+      <strong>Midazolam IM / IN ( 15mg/3ml )</strong><br>
       Dose : ${doseMg.toFixed(1)} mg<br>
       Volume total : ${volumeMl.toFixed(2)} ml<br>
       Par narine : ${volumeNarine.toFixed(2)} ml<br>
       Dose max : 10 mg
+      Concentration : 15 mg/3 ml = 5 mg/ml
     </div>
   `;
 };
