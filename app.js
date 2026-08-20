@@ -2126,7 +2126,7 @@ window.calculConvulsionsPedia = function () {
       Dose : ${doseMg.toFixed(1)} mg<br>
       Volume total : ${volumeMl.toFixed(2)} ml<br>
       Par narine : ${volumeNarine.toFixed(2)} ml<br>
-      Dose max : 10 mg
+      Dose max : 10 mg<br>
       Concentration : 5 mg/ml
     </div>
   `;
