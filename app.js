@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 19-08-2026 11h40");
+console.log("APP VERSION 20-08-2026 08h40");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -1422,7 +1422,65 @@ function renderSpecialContent(item, special) {
 
     return;
   }
+  
+ // ⚡ Calcul Convulsions Adulte
+if (item.id === "conv_adulte") {
+  special.innerHTML = `
+    <div class="card med-card">
+      <h3>⚡ Calcul Convulsions Adulte</h3>
 
+      <input
+        type="number"
+        id="poidsConvAdulte"
+        class="input"
+        placeholder="Poids en kg"
+      >
+
+      <input
+        type="number"
+        id="ageConvAdulte"
+        class="input"
+        placeholder="Âge"
+      >
+
+      <div id="resultatsConvAdulte"></div>
+    </div>
+  `;
+
+  document.getElementById("poidsConvAdulte")
+    ?.addEventListener("input", calculConvulsionsAdulte);
+
+  document.getElementById("ageConvAdulte")
+    ?.addEventListener("input", calculConvulsionsAdulte);
+
+  return;
+}
+
+  // ⚡ Calcul Convulsions Pediatrique
+
+ if (item.id === "conv_pedia") {
+  special.innerHTML = `
+    <div class="card med-card">
+      <h3>⚡ Calcul Convulsions Pédiatriques</h3>
+
+      <input
+        type="number"
+        id="poidsConvPedia"
+        class="input"
+        placeholder="Poids en kg"
+      >
+
+      <div id="resultatsConvPedia"></div>
+    </div>
+  `;
+
+  document.getElementById("poidsConvPedia")
+    ?.addEventListener("input", calculConvulsionsPedia);
+
+  return;
+} 
+
+  
   // ✅ ANTALGIE (déjà OK)
   if (item.id === "antalgie_sat") {
     special.innerHTML = `
@@ -2011,6 +2069,69 @@ window.calculPedia = function () {
     </div>
   `;
 };
+
+window.calculConvulsionsAdulte = function () {
+  const poids = Number(document.getElementById("poidsConvAdulte")?.value);
+  const age = Number(document.getElementById("ageConvAdulte")?.value);
+  const resultats = document.getElementById("resultatsConvAdulte");
+
+  if (!resultats) return;
+
+  if (isNaN(poids) || poids <= 0 || isNaN(age) || age <= 0) {
+    resultats.innerHTML = "";
+    return;
+  }
+
+  const doseMg = age > 75
+    ? poids * 0.05
+    : poids * 0.1;
+
+  const volumeMl = doseMg / 5;
+
+  resultats.innerHTML = `
+    <div class="med-box midazolam">
+      <strong>Midazolam IM / IN</strong><br>
+      Dose : ${doseMg.toFixed(1)} mg<br>
+      Volume : ${volumeMl.toFixed(2)} ml<br>
+      Concentration : 5 mg/ml
+    </div>
+
+    <div class="med-box rivotril">
+      <strong>Clonazépam (Rivotril)</strong><br>
+      Dose initiale : 1 mg IV<br>
+      Répétition possible après 10 min<br>
+      Dose max : 2 mg
+    </div>
+  `;
+};
+
+window.calculConvulsionsPedia = function () {
+  const poids = Number(document.getElementById("poidsConvPedia")?.value);
+  const resultats = document.getElementById("resultatsConvPedia");
+
+  if (!resultats) return;
+
+  if (isNaN(poids) || poids <= 0) {
+    resultats.innerHTML = "";
+    return;
+  }
+
+  const doseMg = Math.min(poids * 0.2, 10);
+  const volumeMl = doseMg / 5;
+  const volumeNarine = volumeMl / 2;
+
+  resultats.innerHTML = `
+    <div class="med-box midazolam">
+      <strong>Midazolam IM / IN</strong><br>
+      Dose : ${doseMg.toFixed(1)} mg<br>
+      Volume total : ${volumeMl.toFixed(2)} ml<br>
+      Par narine : ${volumeNarine.toFixed(2)} ml<br>
+      Dose max : 10 mg
+    </div>
+  `;
+};
+
+
 
 window.calculAntalgie = function () {
   const poids = Number(document.getElementById("poidsAntalgie")?.value);
