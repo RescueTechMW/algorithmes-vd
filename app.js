@@ -2093,7 +2093,7 @@ window.calculConvulsionsAdulte = function () {
       <strong>Midazolam IM / IN ( 15mg/3ml )</strong><br>
       Dose : ${doseMg.toFixed(1)} mg<br>
       Volume : ${volumeMl.toFixed(2)} ml<br>
-      Concentration : 15 mg/3 ml = 5 mg/ml
+      Concentration : 5 mg/ml
     </div>
 
     <div class="med-box rivotril">
@@ -2127,7 +2127,7 @@ window.calculConvulsionsPedia = function () {
       Volume total : ${volumeMl.toFixed(2)} ml<br>
       Par narine : ${volumeNarine.toFixed(2)} ml<br>
       Dose max : 10 mg
-      Concentration : 15 mg/3 ml = 5 mg/ml
+      Concentration : 5 mg/ml
     </div>
   `;
 };
