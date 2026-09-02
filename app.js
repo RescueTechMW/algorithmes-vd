@@ -1868,7 +1868,13 @@ if (
     case "home":
       pageTitle = "Algorithmes";
       break;
+case "resumes":
+  pageTitle = "📚 Mes révisions";
+  break;
 
+case "theorie":
+  pageTitle = "📚 Cartes de théorie";
+  break;
     case "vd":
       pageTitle = "Algo VD";
       break;
