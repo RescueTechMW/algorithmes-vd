@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 25-08-2026 20h35");
+console.log("APP VERSION 02-09-2026 15h45");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -1067,9 +1067,13 @@ function getAllAlgos() {
   return [
     ...VD_ALGOS.map(item => ({ ...item, sourceType: "vd" })),
     ...AUTRE.map(item => ({ ...item, sourceType: "autre" })),
+    ...MES_RESUMES.map(item => ({ ...item, sourceType: "resume" })),
+    ...CARTES_THEORIE.map(item => ({ ...item, sourceType: "theorie" })),
     ...CORFA_ALGOS.map(item => ({ ...item, sourceType: "corfa-algos" })),
     ...CORFA_PHARMA.map(item => ({ ...item, sourceType: "corfa-pharma" })),
-    ...(canSeeStar ? STAR_ALGOS.map(item => ({ ...item, sourceType: "star" })) : [])
+    ...(canSeeStar
+      ? STAR_ALGOS.map(item => ({ ...item, sourceType: "star" }))
+      : [])
   ];
 }
 
@@ -1192,13 +1196,17 @@ function renderHomeFavorites() {
   const favoritesSection = document.getElementById("favoritesSection");
   if (!favoritesSection) return;
 
-  const all = [
-    ...VD_ALGOS.map(item => ({ item, source: "vd" })),
-    ...AUTRE.map(item => ({ item, source: "autre" })),
-    ...CORFA_ALGOS.map(item => ({ item, source: "corfa-algos" })),
-    ...CORFA_PHARMA.map(item => ({ item, source: "corfa-pharma" })),
-    ...(canSeeStar ? STAR_ALGOS.map(item => ({ item, source: "star" })) : [])
-  ];
+ const all = [
+  ...VD_ALGOS.map(item => ({ item, source: "vd" })),
+  ...AUTRE.map(item => ({ item, source: "autre" })),
+  ...MES_RESUMES.map(item => ({ item, source: "resume" })),
+  ...CARTES_THEORIE.map(item => ({ item, source: "theorie" })),
+  ...CORFA_ALGOS.map(item => ({ item, source: "corfa-algos" })),
+  ...CORFA_PHARMA.map(item => ({ item, source: "corfa-pharma" })),
+  ...(canSeeStar
+    ? STAR_ALGOS.map(item => ({ item, source: "star" }))
+    : [])
+];
 
   const favorites = all
     .filter(({ item, source }) => isFavorite(source, item))
