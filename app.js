@@ -1843,7 +1843,6 @@ if (backBtn) {
 }
   const topbar = document.getElementById("topbar");
   const title = document.getElementById("mainTitle");
-  const backBtn = document.getElementById("backBtn");
 
 if (backBtn) {
   backBtn.style.display =
