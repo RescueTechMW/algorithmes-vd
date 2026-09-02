@@ -143,22 +143,51 @@
       </section>
       
 <section id="screen-resumes" class="screen">
+
+  <div class="detail-toolbar">
+    <button
+      class="round-btn"
+      onclick="showScreen('home')"
+      type="button">
+      🏠
+    </button>
+  </div>
+
+  <div class="detail-toolbar">
+    <button
+      class="round-btn"
+      onclick="showScreen('autre')"
+      type="button">
+      ←
+    </button>
+  </div>
+
   <div id="resumesList" class="list"></div>
+
 </section>
 <section id="screen-theorie" class="screen">
 
-  <div style="margin-bottom:12px;">
+  <div class="detail-toolbar">
     <button
-      type="button"
       class="round-btn"
-      onclick="showScreen('autre')">
-      ← 
+      onclick="showScreen('home')"
+      type="button">
+      🏠
+    </button>
+  </div>
+
+  <div class="detail-toolbar">
+    <button
+      class="round-btn"
+      onclick="showScreen('autre')"
+      type="button">
+      ←
     </button>
   </div>
 
   <div id="theorieList" class="list"></div>
 
-</section>   
+</section>
 <!-- ECRAN ADMIN -->
 <section id="screen-admin-menu" class="screen">
 
