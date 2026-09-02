@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 02-09-2026 15h45");
+console.log("APP VERSION 02-09-2026 15h50");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -1835,6 +1835,18 @@ function escapeHtml(value) {
 function updateHeaderAndNav(screen) {
   const topbar = document.getElementById("topbar");
   const title = document.getElementById("mainTitle");
+  const backBtn = document.getElementById("backBtn");
+
+if (backBtn) {
+  backBtn.style.display =
+    (
+      screen === "detail" ||
+      screen === "resumes" ||
+      screen === "theorie"
+    )
+      ? "block"
+      : "none";
+}
 
   document.querySelectorAll(".screen").forEach(el => el.classList.remove("active"));
   document.getElementById(`screen-${screen}`)?.classList.add("active");
