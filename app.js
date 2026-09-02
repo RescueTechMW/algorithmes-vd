@@ -827,7 +827,7 @@ const CARTES_THEORIE = [
   {id: "pneumonie", ordre: 3, titre: "🫁 Pneumonie", chapitre: "Autre", source: "theorie", image: "images/Pneumonie.png", favori: false , access: ["PUBLIC"]},
   {id: "diabete", ordre: 4, titre: "🩸🍭 Diabète", chapitre: "Autre", source: "theorie", image: "images/diabète.png", favori: false, access: ["PUBLIC"] },
   {id: "ic", ordre: 5, titre: "🫀Insuffisance cardiaque", chapitre: "Autre", source: "theorie", image: "images/Insuffisance cardique.png", favori: false, access: ["PUBLIC"] },
-   {id: "ir", ordre: 6, titre: "Insuffisance rénale", chapitre: "Autre", source: "theorie", image: "images/Insuffisance rénale.png", favori: false, access: ["PUBLIC"] },
+   {id: "ir", ordre: 6, titre: "🚽 Insuffisance rénale", chapitre: "Autre", source: "theorie", image: "images/Insuffisance rénale.png", favori: false, access: ["PUBLIC"] },
   {id: "ep", ordre: 7, titre: "🫁 Embolie pulmonaire", chapitre: "Autre", source: "theorie", image: "images/EP.png", favori: false, access: ["PUBLIC"] },
   {id: "avc", ordre: 8, titre: "🧠 AVC", chapitre: "Autre", source: "theorie", image: "images/AVC.png", favori: false, access: ["PUBLIC"] },
   {id: "convulsions", ordre: 9, titre: "🧠 Convulsions", chapitre: "Autre", source: "theorie", image: "images/Convuslions adulte.png", favori: false, access: ["PUBLIC"] },
