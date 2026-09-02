@@ -1383,13 +1383,16 @@ function setupSearchHandler(e) {
 function openDetail(source, id) {
   
 if (source === "autre" && id === "mes_resumes") {
+    state.previousScreen = state.screen;
     showScreen("resumes");
     return;
-  }
-  if (source === "autre" && id === "cartes_theorie") {
+}
+
+if (source === "autre" && id === "cartes_theorie") {
+    state.previousScreen = state.screen;
     showScreen("theorie");
     return;
-  }
+}
 
   state.detailSource = source;
   state.selectedId = id;
