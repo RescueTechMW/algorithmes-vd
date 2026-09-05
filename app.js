@@ -816,9 +816,8 @@ const MES_RESUMES = [
   {id: "trauma_face", ordre: 6, titre: "👊🏻 Trauma Face", chapitre: "Résumés", source: "resume", image: "images/Trauma face_CHAT.png", favori: false , access: ["ADMIN"]},
   {id: "convulsions", ordre: 8, titre: "😵‍💫 Convulsions", chapitre: "Résumés", source: "resume", image: "images/Convulsions_CHAT.png", favori: false , access: ["ADMIN"]},
   {id: "douleur_abdo", ordre: 9, titre: "Douleurs Abdo", chapitre: "Résumés", source: "resume", image: "images/Douleurs abdo_CHAT.png", favori: false , access: ["ADMIN"]},
-  {id: "trauma_abdo_pelvien", ordre: 7, titre: "Trauma Abdo-pelvien", chapitre: "Résumés", source: "resume", image: "images/Trauma abdo pelvien_CHAT.png", favori: false , access: ["ADMIN"]},
-  {id: "jeune", ordre: 1, titre: "🍴Jeûne 5 jours🫗", chapitre: "Autre", source: "autre", images:  ["images/jeune_1.png","images/jeune_2.png","images/jeune_3.png","images/jeune_4.png","images/recettes_jeune.png","images/detox.png","images/sport.png","images/vitalite.png"], favori: false , access: ["ADMIN"]}
-  
+  {id: "trauma_abdo_pelvien", ordre: 7, titre: "Trauma Abdo-pelvien", chapitre: "Résumés", source: "resume", image: "images/Trauma abdo pelvien_CHAT.png", favori: false , access: ["ADMIN"]}
+ 
 ];
 const CARTES_THEORIE = [
 
