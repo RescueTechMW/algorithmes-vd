@@ -853,7 +853,7 @@ const Publications = [
 {titre: "🧪 Un essai prospectif randomisé, à double dummy, comparant la pression intraveineuse de kétamine à faible dose à une perfusion courte de kétamine à faible dose pour le traitement de la douleur aux urgences",
 url: "https://www.sciencedirect.com/science/article/abs/pii/S0735675717301717"}],
   {titre: "🧪 Y a-t-il un rôle pour la kétamine à dose subdissociative intraveineuse administrée en complément des opioïdes ou comme agent unique pour la gestion de la douleur aiguë aux urgences ?",
-url: "https://https://www.sciencedirect.com/science/article/abs/pii/S0736467916305388"}],
+url: "https://www.sciencedirect.com/science/article/abs/pii/S0736467916305388"}],
   images:["images/Kétamine_1.png","images/Kétamine_2.png","images/Kétamine_3.png","images/Kétamine_4.png","images/Kétamine_5.png","images/Kétamine_6.png","images/Kétamine_7.png","images/Kétamine_8.png","images/Kétamine_9.png"],
   favori: false , access: ["PUBLIC"]},
  
