@@ -1868,7 +1868,7 @@ function updateHeaderAndNav(screen) {
 
 if (backBtn) {
   backBtn.style.display =
-    ["detail", "resumes", "theorie"].includes(screen)
+    ["detail", "resumes", "theorie", "publications"].includes(screen)
       ? "block"
       : "none";
 }
@@ -1881,6 +1881,7 @@ if (backBtn) {
       screen === "detail" ||
       screen === "resumes" ||
       screen === "theorie"
+      screen === "publications"
     )
       ? "block"
       : "none";
