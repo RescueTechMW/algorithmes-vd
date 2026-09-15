@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 05-09-2026 09h10");
+console.log("APP VERSION 15-09-2026 09h10");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -194,7 +194,8 @@ const AUTRE = [
   { id: "breathing", ordre: 23, titre: "Breathing 🫁", chapitre: "Autre", source: "Autre", image: "images/breathing.png", favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…" , access: ["PUBLIC"]},
   { id: "calcul_pedia", ordre: 40, titre: "💉 Calcul rapide pédiatrique", chapitre: "Pédiatrie👶", source: "Autre", images: ["images/calcul_pedia.png","images/pastel.png"], favori: false, notesPlaceholder: "", access: ["PUBLIC"] },
   {id: "mes_resumes",ordre: 1,titre: "📚 Mes Révisions",chapitre: "Autre", source: "Moi", image: "images/mes_resumes.png", favori: false, notesPlaceholder: "", access: ["ADMIN"]},
-   {id: "cartes_theorie",ordre: 2,titre: "📚 Cartes de théorie",chapitre: "Autre", source: "Autre", image: "images/cartes.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]}
+  {id: "cartes_theorie",ordre: 2,titre: "📚 Cartes de théorie",chapitre: "Autre", source: "Autre", image: "images/cartes.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]},
+  {id: "cartes_theorie",ordre: 30,titre: "📚 Publications",chapitre: "Autre", source: "Autre", image: "images/publications.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]}
  
 ];
 
