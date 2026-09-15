@@ -839,8 +839,19 @@ const CARTES_THEORIE = [
 ];
 
 const Publications = [
-
-  {id: "keta", ordre: 1, titre: "💊 Kétamine en perfusion lente", chapitre: "Autre", source: "theorie", url:"https://research.dial.uclouvain.be/bitstreams/5d6ce922-1efe-41bb-aa83-401f81c979ce/download", images: ["images/Kétamine_1.png","images/Kétamine_2.png","images/Kétamine_3.png","images/Kétamine_4.png","images/Kétamine_5.png","images/Kétamine_6.png","images/Kétamine_7.png","images/Kétamine_8.png","images/Kétamine_9.png"], favori: false , access: ["PUBLIC"]},
+{
+  id: "keta",
+  ordre: 1,
+  titre: "💊 Kétamine en perfusion lente",
+  chapitre: "Autre",
+  source: "theorie",
+  auteurs: "Miller et al.",
+  annee: 2021,
+  revue: "Journal of Emergency Medicine",
+  url: "https://research.dial.uclouvain.be/bitstreams/5d6ce922-1efe-41bb-aa83-401f81c979ce/download",
+  images:["images/Kétamine_1.png","images/Kétamine_2.png","images/Kétamine_3.png","images/Kétamine_4.png","images/Kétamine_5.png","images/Kétamine_6.png","images/Kétamine_7.png","images/Kétamine_8.png","images/Kétamine_9.png"],
+  favori: false , access: ["PUBLIC"]},
+ 
   { id: "ecg", ordre: 50, titre: "ECG 💘", chapitre: "Autre", source: "Autre", images: ["images/1.Introduction_ECG.png","images/2.Definition_ECG.png","images/7.Ondes_ECG.png","images/8.Intervalles_ECG.png","images/9.Segments_ECG.png","images/10.Principe_ECG.png","images/11.Papier_ECG.png"], favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…", access: ["PUBLIC"]}
 
 ];
