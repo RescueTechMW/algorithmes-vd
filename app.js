@@ -186,16 +186,16 @@ const AUTRE = [
   { id: "molecules", ordre: 22, titre: "💊 Molécules Antalgie", chapitre: "Autre", source: "STAR", image: "images/molecules2.png", favori: false, notesPlaceholder: "Ex. protocole interne SAT…" , access: ["PUBLIC"]},
   { id: "toxidrome", ordre: 11, titre: "Toxidrome 💊", chapitre: "Neuro🧠", source: "Autre", images: ["images/Toxidrome.png","images/Toxidrome_anticholinergique_2.png","images/Toxidrome_cholinergique.png","images/Toxidrome_opioide.png","images/Toxidrome_simpatomimetique.png","images/Toxidrome_hypnosedatif.png"], favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…", access: ["PUBLIC"] },
   { id: "glasgow", ordre: 12, titre: "Glasgow 😵‍💫", chapitre: "Neuro🧠", source: "Autre", images:["images/GCS.png","images/Glasgow.png"], favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…", access: ["PUBLIC"] },
-  { id: "antalgie_sat", ordre: 3, titre: "Antalgie SAT", chapitre: "💉Antalgie", source: "SAT", image: "images/antalgie_sat.png", favori: false, notesPlaceholder: "Ex. protocole interne SAT…" , access: ["SAT"]},
-  { id: "antalgie_tcs", ordre: 4, titre: "Antalgie TCS", chapitre: "💉Antalgie", source: "TCS", images: ["images/antalgie_tcs.png","images/molecules2.png"], favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, précautions sujet âgé…", access: ["TCS"] },
-  { id: "antalgie_tcs_ped", ordre: 5, titre: "Antalgie TCS Ped 👶", chapitre: "💉Antalgie", source: "TCS", image: "images/antalgie_tcs_ped.png", favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…", access: ["TCS"] },
+  { id: "antalgie_sat", ordre: 4, titre: "Antalgie SAT", chapitre: "💉Antalgie", source: "SAT", image: "images/antalgie_sat.png", favori: false, notesPlaceholder: "Ex. protocole interne SAT…" , access: ["SAT"]},
+  { id: "antalgie_tcs", ordre: 5, titre: "Antalgie TCS", chapitre: "💉Antalgie", source: "TCS", images: ["images/antalgie_tcs.png","images/molecules2.png"], favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, précautions sujet âgé…", access: ["TCS"] },
+  { id: "antalgie_tcs_ped", ordre: 6, titre: "Antalgie TCS Ped 👶", chapitre: "💉Antalgie", source: "TCS", image: "images/antalgie_tcs_ped.png", favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…", access: ["TCS"] },
   { id: "aeioutip", ordre: 24, titre: "AEIOU TIPS😴", chapitre: "Autre", source: "Autre", image: "images/AEIOUTIPS.png", favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…" , access: ["PUBLIC"]},
   { id: "befast", ordre: 13, titre: "Be FAST 😵", chapitre: "Neuro🧠", source: "Autre", image: "images/Befast.png", favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…" , access: ["PUBLIC"]},
   { id: "breathing", ordre: 23, titre: "Breathing 🫁", chapitre: "Autre", source: "Autre", image: "images/breathing.png", favori: false, notesPlaceholder: "Ex. posologies terrain, antiémétique, poids…" , access: ["PUBLIC"]},
   { id: "calcul_pedia", ordre: 40, titre: "💉 Calcul rapide pédiatrique", chapitre: "Pédiatrie👶", source: "Autre", images: ["images/calcul_pedia.png","images/pastel.png"], favori: false, notesPlaceholder: "", access: ["PUBLIC"] },
   {id: "mes_resumes",ordre: 1,titre: "📚 Mes Révisions",chapitre: "Autre", source: "Moi", image: "images/mes_resumes.png", favori: false, notesPlaceholder: "", access: ["ADMIN"]},
   {id: "cartes_theorie",ordre: 2,titre: "📚 Cartes de théorie",chapitre: "Autre", source: "Autre", image: "images/cartes.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]},
-  {id: "publications",ordre: 30,titre: "📚 Publications",chapitre: "Autre", source: "Autre", image: "images/publications.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]}
+  {id: "publications",ordre: 3,titre: "📚 Publications",chapitre: "Autre", source: "Autre", image: "images/publications.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]}
  
 ];
 
