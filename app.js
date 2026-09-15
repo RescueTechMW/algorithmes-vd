@@ -1058,6 +1058,9 @@ case "resume":
       case "theorie":
   return CARTES_THEORIE;
 
+      case "publications":
+  return Publications;
+
     case "corfa":
       return CORFA;
 
@@ -1078,6 +1081,7 @@ function getAllAlgos() {
     ...AUTRE.map(item => ({ ...item, sourceType: "autre" })),
     ...MES_RESUMES.map(item => ({ ...item, sourceType: "resume" })),
     ...CARTES_THEORIE.map(item => ({ ...item, sourceType: "theorie" })),
+    ...Publications.map(item => ({ ...item, sourceType: "publications" })),
     ...CORFA_ALGOS.map(item => ({ ...item, sourceType: "corfa-algos" })),
     ...CORFA_PHARMA.map(item => ({ ...item, sourceType: "corfa-pharma" })),
     ...(canSeeStar
@@ -1201,6 +1205,18 @@ function renderTheorie() {
 
   bindCardEvents(container);
 }
+function renderPublications() {
+
+  const container = document.getElementById("publicationsList");
+
+  if (!container) return;
+
+  container.innerHTML = Publications
+    .map(item => cardHTML(item, "publications"))
+    .join("");
+
+  bindCardEvents(container);
+}
 function renderHomeFavorites() {
   const favoritesSection = document.getElementById("favoritesSection");
   if (!favoritesSection) return;
@@ -1210,6 +1226,7 @@ function renderHomeFavorites() {
   ...AUTRE.map(item => ({ item, source: "autre" })),
   ...MES_RESUMES.map(item => ({ item, source: "resume" })),
   ...CARTES_THEORIE.map(item => ({ item, source: "theorie" })),
+   ...Publications.map(item => ({ item, source: "publications" })),
   ...CORFA_ALGOS.map(item => ({ item, source: "corfa-algos" })),
   ...CORFA_PHARMA.map(item => ({ item, source: "corfa-pharma" })),
   ...(canSeeStar
@@ -1400,6 +1417,11 @@ if (source === "autre" && id === "mes_resumes") {
 if (source === "autre" && id === "cartes_theorie") {
     state.previousScreen = state.screen;
     showScreen("theorie");
+    return;
+}
+  if (source === "autre" && id === "publications") {
+    state.previousScreen = state.screen;
+    showScreen("publications");
     return;
 }
 
@@ -1906,6 +1928,11 @@ case "resumes":
 case "theorie":
   pageTitle = "📚 Cartes de théorie";
   break;
+
+case "publications":
+  pageTitle = "📚 Publications";
+  break;
+      
     case "vd":
       pageTitle = "Algo VD";
       break;
@@ -1986,6 +2013,7 @@ function showScreen(screen) {
   if (screen === "materials") renderMaterials();
   if (screen === "detail") renderDetail();
   if (screen === "theorie") renderTheorie();
+   if (screen === "publications") renderPublications();
   
 if (screen === "resumes") {
   renderResumes();
