@@ -195,7 +195,7 @@ const AUTRE = [
   { id: "calcul_pedia", ordre: 40, titre: "💉 Calcul rapide pédiatrique", chapitre: "Pédiatrie👶", source: "Autre", images: ["images/calcul_pedia.png","images/pastel.png"], favori: false, notesPlaceholder: "", access: ["PUBLIC"] },
   {id: "mes_resumes",ordre: 1,titre: "📚 Mes Révisions",chapitre: "Autre", source: "Moi", image: "images/mes_resumes.png", favori: false, notesPlaceholder: "", access: ["ADMIN"]},
   {id: "cartes_theorie",ordre: 2,titre: "📚 Cartes de théorie",chapitre: "Autre", source: "Autre", image: "images/cartes.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]},
-  {id: "cartes_theorie",ordre: 30,titre: "📚 Publications",chapitre: "Autre", source: "Autre", image: "images/publications.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]}
+  {id: "publications",ordre: 30,titre: "📚 Publications",chapitre: "Autre", source: "Autre", image: "images/publications.png", favori: false, notesPlaceholder: "", access: ["PUBLIC"]}
  
 ];
 
