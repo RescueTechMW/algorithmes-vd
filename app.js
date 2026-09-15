@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 15-09-2026 10h05");
+console.log("APP VERSION 15-09-2026 10h15");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -1694,6 +1694,21 @@ console.log(src);
       wrap.appendChild(im);
 
     });
+
+if (item.url) {
+
+  const btn = document.createElement("a");
+
+  btn.href = item.url;
+  btn.target = "_blank";
+
+  btn.className = "btn";
+
+  btn.textContent = "📖 Voir la publication";
+
+  wrap.appendChild(btn);
+}
+    
 if (
   hasAccess(["ADMIN"]) &&
   item.privateImages?.length
