@@ -887,7 +887,7 @@ const Publications = [
   source: "theorie",
   auteurs: "Weil Mélanie",
   annee: 2022,
-  images: ["AMD_STAR.png",],
+  images: ["images/AMD_STAR.png",],
   favori: false,
   access: ["PUBLIC"]
 },
@@ -899,7 +899,7 @@ const Publications = [
   source: "theorie",
   auteurs: "Rocca Carla",
   annee: 2026,
-  images: ["TD_gant.png",],
+  images: ["images/TD_gant.png",],
   favori: false,
   access: ["PUBLIC"]
 }
