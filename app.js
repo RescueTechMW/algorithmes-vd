@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 15-09-2026 10h55");
+console.log("APP VERSION 15-09-2026 11h55");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -879,17 +879,27 @@ const Publications = [
   favori: false,
   access: ["PUBLIC"]
 },
-
 {
-  id: "ecg",
-  ordre: 50,
-  titre: "ECG 💘",
+  id: "td_mel",
+  ordre: 2,
+  titre: "💊 TD Mél Antalgie multimodale",
   chapitre: "Autre",
-  source: "Autre",
-  images: [
-    "images/1.Introduction_ECG.png",
-    "images/2.Definition_ECG.png"
-  ],
+  source: "theorie",
+  auteurs: "Weil Mélanie",
+  annee: 2022,
+  images: ["AMD_STAR.png",],
+  favori: false,
+  access: ["PUBLIC"]
+},
+{
+  id: "td_carla",
+  ordre: 3,
+  titre: "🧤 TD Carla L'illusion du gant",
+  chapitre: "Autre",
+  source: "theorie",
+  auteurs: "Rocca Carla",
+  annee: 2026,
+  images: ["TD_gant.png",],
   favori: false,
   access: ["PUBLIC"]
 }
