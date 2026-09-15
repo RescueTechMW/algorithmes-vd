@@ -1880,7 +1880,7 @@ if (backBtn) {
     (
       screen === "detail" ||
       screen === "resumes" ||
-      screen === "theorie"
+      screen === "theorie" ||
       screen === "publications"
     )
       ? "block"
