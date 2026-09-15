@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 15-09-2026 10h25");
+console.log("APP VERSION 15-09-2026 10h35");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -1698,18 +1698,26 @@ console.log(src);
 
     });
 
-if (item.url) {
+if (item.liens?.length) {
 
-  const btn = document.createElement("a");
+  item.liens.forEach(lien => {
 
-  btn.href = item.url;
-  btn.target = "_blank";
+    const btn = document.createElement("a");
 
-  btn.className = "btn";
+    btn.href = lien.url;
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
 
-  btn.textContent = "📖 Voir la publication";
+    btn.className = "btn";
+    btn.textContent = lien.titre;
 
-  wrap.appendChild(btn);
+    btn.style.display = "block";
+    btn.style.marginBottom = "10px";
+
+    wrap.appendChild(btn);
+
+  });
+
 }
     
 if (
