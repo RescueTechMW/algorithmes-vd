@@ -4,7 +4,7 @@
  * © 2026 – Tous droits réservés
  */
 
-console.log("APP VERSION 15-09-2026 13h10");
+console.log("APP VERSION 17-11-2026 09h40");
 
 // ⚠️ Gestion globale des erreurs
 window.addEventListener("error", function(e) {
@@ -2304,18 +2304,37 @@ window.calculAntalgie = function () {
     resultats.innerHTML = "";
     return;
   }
+ const isSeniors = !isNaN(age) && age >= 75;
+   // ✅ FENTANYL (divisé par 2 si ≥ 75 ans)
+  let fentCharge = poids;
+  let fentRappel = poids * 0.5;
+  let fentMax = Math.min(poids * 4, 400);
+  
+   if (isSeniors) {
+    fentCharge /= 2;
+    fentRappel /= 2;
+    fentMax /= 2;
+  }
 
-  const fentCharge = poids;
-  const fentRappel = poids * 0.5;
-  const fentMax = Math.min(poids * 4, 400);
+  let morphCharge = poids * 0.1;
+  let morphRappel = poids * 0.05;
+  let morphMax = Math.min(poids * 0.2, 20);
 
-  const morphCharge = poids * 0.1;
-  const morphRappel = poids * 0.05;
-  const morphMax = Math.min(poids * 0.2, 20);
+   if (isSeniors) {
+    morphCharge /= 2;
+    morphRappel /= 2;
+    morphMax /= 2;
+  }
 
-  const ketaCharge = poids * 0.5;
-  const ketaRappel = poids * 0.25;
-  const ketaMax = poids;
+  let ketaCharge = poids * 0.5;
+  let ketaRappel = poids * 0.25;
+  let ketaMax = poids;
+
+  if (isSeniors) {
+    ketaCharge /= 2;
+    ketaRappel /= 2;
+    ketaMax /= 2;
+  }
 
   let metaMg = "";
   let metaMl = "";
