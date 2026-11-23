@@ -827,7 +827,7 @@ const CARTES_THEORIE = [
   {id: "bpco", ordre: 1, titre: "🫁 BPCO", chapitre: "Autre", source: "theorie", image: "images/BPCO.png", favori: false , access: ["PUBLIC"]},
   {id: "oap", ordre: 2, titre: "🫁 OAP 🫀", chapitre: "Autre", source: "theorie", image: "images/OAP.png", favori: false, access: ["PUBLIC"] },
   {id: "pneumonie", ordre: 3, titre: "🫁 Pneumonie", chapitre: "Autre", source: "theorie", image: "images/Pneumonie.png", favori: false , access: ["PUBLIC"]},
-  {id: "diabete", ordre: 4, titre: "🩸🍭 Diabète", chapitre: "Autre", source: "theorie", image: "images/diabète.png", favori: false, access: ["PUBLIC"] },
+  {id: "diabete", ordre: 4, titre: "🩸🍭 Diabète", chapitre: "Autre", source: "theorie", images: ["images/diabète.png","images/diabete_3.png"], favori: false, access: ["PUBLIC"] },
   {id: "ic", ordre: 5, titre: "🫀Insuffisance cardiaque", chapitre: "Autre", source: "theorie", image: "images/Insuffisance cardique.png", favori: false, access: ["PUBLIC"] },
    {id: "ir", ordre: 6, titre: "🚽 Insuffisance rénale", chapitre: "Autre", source: "theorie", image: "images/Insuffisance rénale.png", favori: false, access: ["PUBLIC"] },
   {id: "ep", ordre: 7, titre: "🫁 Embolie pulmonaire", chapitre: "Autre", source: "theorie", image: "images/EP.png", favori: false, access: ["PUBLIC"] },
