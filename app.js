@@ -695,7 +695,7 @@ const CORFA_ALGOS = [
   { id: "corfa_rosc_trau", ordre: 24, titre: "ROSC traumatique CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_acr_trau.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_choc_trau", ordre: 25, titre: "Hémorragies et État de choc traumatique CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_choc_trau.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_tcc", ordre: 26, titre: "Traumatisme crânio-cérébral CORFA", chapitre: "Trauma 🤕", source: "CORFA", images: ["images/corfa_tcc.png","images/G_TCC.png"], favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
-  { id: "corfa_medullaire", ordre: 27, titre: "Traumatisme médullaire CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_medullaire.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
+  { id: "corfa_medullaire", ordre: 27, titre: "Traumatisme médullaire CORFA", chapitre: "Trauma 🤕", source: "CORFA", images: ["images/corfa_medullaire.png","images/G_Medullaire.png"], favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_rachis", ordre: 28, titre: "Stabilisation du rachis CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_rachis.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_trau_antalgie", ordre: 29, titre: "Antalgie traumatique CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_trau_antalgie.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_acideeau", ordre: 30, titre: "Accident de plongée CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_plongee.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
