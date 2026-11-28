@@ -678,10 +678,10 @@ const CORFA_ALGOS = [
   // 🔵 NON TRAUMATIQUE ADULTE
   { id: "corfa_airway", ordre: 10, titre: "Gestion voies aériennes / ventilation CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_airway.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_respiratoire", ordre: 11, titre: "Troubles respiratoires CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_respiratoire.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
-  { id: "corfa_acr_non_trau", ordre: 12, titre: "ACR non traumatique CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_acr_non_trau.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
+  { id: "corfa_acr_non_trau", ordre: 12, titre: "ACR non traumatique CORFA", chapitre: "Maladie🤒", source: "CORFA", images: ["images/corfa_acr_non_trau.png","images/G_Prise en charge de l'ACR.png"], favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_retour_circu", ordre: 13, titre: "Retour circulation spontanée CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_retour_circu.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_thoracique", ordre: 14, titre: "Douleurs thoraciques CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_thoracique.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
-  { id: "corfa_rythme", ordre: 15, titre: "Troubles du rythme CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_rythme.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
+  { id: "corfa_rythme", ordre: 15, titre: "Troubles du rythme CORFA", chapitre: "Maladie🤒", source: "CORFA", images: ["images/corfa_rythme.png","images/G_Troubles du rythme.png"], favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_choc", ordre: 16, titre: "État de choc non traumatique CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_choc.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_anaphylaxie", ordre: 17, titre: "Réaction anaphylactique CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_anaphylaxie.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_conscience", ordre: 18, titre: "Troubles de la conscience CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_conscience.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
