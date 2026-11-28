@@ -169,11 +169,11 @@ const VD_ALGOS = [
   { id: "acr_stop", ordre: 10, titre: "☠️Arrêt de réanimation🪦", chapitre: "Maladie🤒", source: "VD", images: ["images/acr_arret.png"], favori: false, notesPlaceholder: "Ex. adrénaline, amiodarone, causes réversibles…" , access: ["PUBLIC"]},
   { id: "acr_pedia", ordre: 25, titre: "ACR pédiatrique 🫀", chapitre: "Pédiatrie👶", source: "VD", image: "images/acr_pedia.png", favori: false, notesPlaceholder: "Ex. doses, matériel pédiatrique…" , access: ["PUBLIC"]},
   { id: "nn", ordre: 26, titre: "🍼 Réanimation nouveau-né", chapitre: "Pédiatrie👶", source: "VD", image: "images/nn.png", favori: false, notesPlaceholder: "Ex. matériel, température, ventilation…" , access: ["PUBLIC"]},
-  { id: "brulures", ordre: 19, titre: "🥵 Brûlures 🌡️", chapitre: "Trauma 🤕", source: "VD", image: "images/brulures.png", favori: false, notesPlaceholder: "Ex. refroidissement, pansement, surveillance…" , access: ["PUBLIC"]},
+  { id: "brulures", ordre: 19, titre: "🥵 Brûlures 🌡️", chapitre: "Trauma 🤕", source: "VD", images: ["images/brulures.png""images/G_Electrisation.png"], favori: false, notesPlaceholder: "Ex. refroidissement, pansement, surveillance…" , access: ["PUBLIC"]},
   { id: "conv_adulte", ordre: 20, titre: "😵‍💫 Convulsions adulte 🫨", chapitre: "Neuro🧠", source: "VD", image: "images/conv_adulte.png",privateImages: ["images/Convulsions_CHAT.png"], favori: false, notesPlaceholder: "Ex. midazolam, clonazépam…" , access: ["PUBLIC"]},
   { id: "conv_pedia", ordre: 27, titre: "😵‍💫 Convulsions pédiatriques 🌡️", chapitre: "Pédiatrie👶", source: "VD", image: "images/conv_ped_star.png", favori: false, notesPlaceholder: "Ex. glycémie, température, refroidissement…" , access: ["PUBLIC"]},
   { id: "sca", ordre: 13, titre: "Douleurs thoraciques 🫀 (SCA)", chapitre: "Maladie🤒", source: "VD", image: "images/sca.png", favori: false, notesPlaceholder: "Ex. ECG 12 dérivations, ASA, nitrés…", access: ["PUBLIC"] },
-  { id: "resp_adulte", ordre: 14, titre: "Détresse respiratoire adulte 🫁", chapitre: "Maladie🤒", source: "VD", image: "images/resp_adulte.png", favori: false, notesPlaceholder: "Ex. O2, salbutamol, CPAP…" , access: ["PUBLIC"]},
+  { id: "resp_adulte", ordre: 14, titre: "Détresse respiratoire adulte 🫁", chapitre: "Maladie🤒", source: "VD", images: ["images/resp_adulte.png","images/G_VAS.png","images/G_VNI_1.png"], favori: false, notesPlaceholder: "Ex. O2, salbutamol, CPAP…" , access: ["PUBLIC"]},
   { id: "resp_pedia", ordre: 28, titre: "🫁 Détresse respiratoire 👶 pédiatrique", chapitre: "Pédiatrie👶", source: "VD", image: "images/resp_pedia.png", favori: false, notesPlaceholder: "Ex. nébulisation, respect position spontanée…" , access: ["PUBLIC"]},
   { id: "choc", ordre: 15, titre: "État de choc", chapitre: "Maladie🤒", source: "VD", images: ["images/choc.png","images/types_de_choc.png"],privateImages: ["images/Etat de choc_CHAT.png"], favori: false, notesPlaceholder: "Ex. RL, TA cible, TXA…" , access: ["PUBLIC"]},
   { id: "coma", ordre: 16, titre: "😴 Trouble de la conscience adulte 😵‍💫", chapitre: "Maladie🤒", source: "VD", image: "images/coma.png", favori: false, notesPlaceholder: "Ex. glucose, naloxone, thiamine…" , access: ["PUBLIC"]},
@@ -677,7 +677,7 @@ const CORFA_ALGOS = [
 
   // 🔵 NON TRAUMATIQUE ADULTE
   { id: "corfa_airway", ordre: 10, titre: "Gestion voies aériennes / ventilation CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_airway.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
-  { id: "corfa_respiratoire", ordre: 11, titre: "Troubles respiratoires CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_respiratoire.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
+  { id: "corfa_respiratoire", ordre: 11, titre: "Troubles respiratoires CORFA", chapitre: "Maladie🤒", source: "CORFA", images: ["images/corfa_respiratoire.png","images/G_VAS.png","images/G_VNI_1.png"], favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_acr_non_trau", ordre: 12, titre: "ACR non traumatique CORFA", chapitre: "Maladie🤒", source: "CORFA", images: ["images/corfa_acr_non_trau.png","images/G_Prise en charge de l'ACR.png"], favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_retour_circu", ordre: 13, titre: "Retour circulation spontanée CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_retour_circu.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_thoracique", ordre: 14, titre: "Douleurs thoraciques CORFA", chapitre: "Maladie🤒", source: "CORFA", image: "images/corfa_thoracique.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
@@ -699,7 +699,7 @@ const CORFA_ALGOS = [
   { id: "corfa_rachis", ordre: 28, titre: "Stabilisation du rachis CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_rachis.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_trau_antalgie", ordre: 29, titre: "Antalgie traumatique CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_trau_antalgie.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_acideeau", ordre: 30, titre: "Accident de plongée CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_plongee.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
-  { id: "corfa_brulure", ordre: 31, titre: "Brûlures CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_brulure.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
+  { id: "corfa_brulure", ordre: 31, titre: "Brûlures CORFA", chapitre: "Trauma 🤕", source: "CORFA", images: ["images/corfa_brulure.png","images/G_Electrisation.png"], favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
   { id: "corfa_hypothermie", ordre: 32, titre: "Hypothermie CORFA", chapitre: "Trauma 🤕", source: "CORFA", image: "images/corfa_hypothermie.png", favori: false, notesPlaceholder: "" , access: ["PUBLIC"]},
 
   // 🟡 PÉDIATRIQUE
